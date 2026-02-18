@@ -113,3 +113,72 @@ a {
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
 }
+
+/* ---ingredients--- */
+
+.ingredients {
+}
+
+.ingredients-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ingredients-title span {
+  color: #fd9222;
+}
+
+.ingredients-text {
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+.ingredients-list {
+}
+.ingredients-item {
+}
+.ingredients-img {
+}
+.ingredients-subtitle {
+}
+
+/* ---made--- */
+
+.made {
+}
+
+.made-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.made-title span {
+  color: #fd9222;
+}
+
+.made-img {
+}
+.made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+}
+.made-list {
+}
+.made-list-item {
+}
+
+.made-item-text {
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+}
