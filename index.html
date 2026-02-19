@@ -22,17 +22,19 @@
   <body>
     <header class="header">
       <a class="header-logo" href="/"><span>SIMPLY</span> CHOCOLATE</a>
-      <ul class="header-list">
-        <li class="header-list-item">
-          <a class="header-item-link" href="">Home</a>
-        </li>
-        <li class="header-list-item">
-          <a class="header-item-link" href="">How it’s made?</a>
-        </li>
-        <li class="header-list-item">
-          <a class="header-item-link" href="">Chocolate is loved</a>
-        </li>
-      </ul>
+      <nav>
+        <ul class="header-list">
+          <li class="header-list-item">
+            <a class="header-item-link" href="">Home</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-item-link" href="#made">How it’s made?</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-item-link" href="#reviews">Chocolate is loved</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="hero">
@@ -174,8 +176,87 @@
           </li>
         </ul>
       </section>
-      <section class="reviews"></section>
+      <section class="reviews" id="reviews">
+        <h2 class="reviews-title"><span>chocolate</span> is loved</h2>
+        <ul class="reviews-list">
+          <li>
+            <img
+              src="./images/victoria-dobrzhanska.webp"
+              alt="Victoria Dobrzhanska"
+              class="reviews-img"
+              width="80"
+              height="80"
+            />
+            <h3 class="reviews-subtitle">Victoria Dobrzhanska</h3>
+            <p class="reviews-text">
+              I love this chocolate bar. Perfect combination of light crispy
+              wafer, covered in a thin layer chocolate.
+            </p>
+          </li>
+          <li>
+            <img
+              src="./images/nazar-babenko.jpg"
+              alt="Nazar Babenko"
+              class="reviews-img"
+              width="80"
+              height="80"
+            />
+            <h3 class="reviews-subtitle">Nazar Babenko</h3>
+            <p class="reviews-text">
+              This chocolate confection is a delight! A delight! The wafer is
+              light and crisp, the hazelnut cream is smooth, and the chocolate
+              is good.
+            </p>
+          </li>
+          <li>
+            <img
+              src="./images/olena-kampusch.jpg"
+              alt="Olena Kampusch"
+              class="reviews-img"
+              width="80"
+              height="80"
+            />
+            <h3 class="reviews-subtitle">Olena Kampusch</h3>
+            <p class="reviews-text">
+              Chocolate is a family favourite treat. Love the delicious smooth
+              chocolate and the creaminess inside. The wafer is soft but
+              crunchy.
+            </p>
+          </li>
+        </ul>
+        <button type="button" class="reviews-btn">Leave a review</button>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <p class="footer-text">
+        <span>Chocolate</span> a delicious cure for a bad day
+      </p>
+      <p class="footer-subtitle">Contact us</p>
+      <address class="footer-contacts">
+        <ul class="footer-contacts-list">
+          <li class="footer-contacts-item">
+            <a href="tel:+380684439426" class="footer-contacts-link"
+              >+380 (68) 443-94-26</a
+            >
+          </li>
+          <li class="footer-contacts-item">
+            <a href="mailto:simplycthаoc@gmail.com" class="footer-contacts-link"
+              >simplycthаoc@gmail.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="footer-menu-list">
+        <li class="footer-menu-item">
+          <a class="footer-menu-link" href="/">Home</a>
+        </li>
+        <li class="footer-menu-item">
+          <a class="footer-menu-link" href="#made">How it’s made?</a>
+        </li>
+        <li class="footer-menu-item">
+          <a class="footer-menu-link" href="#reviews">Chocolate is loved</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
