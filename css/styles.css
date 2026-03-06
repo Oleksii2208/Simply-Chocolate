@@ -119,7 +119,7 @@ fieldset {
   transition: color 300ms ease;
 }
 
-.active::after {
+/* .active::after {
   content: "";
   width: 100%;
   height: 4px;
@@ -129,7 +129,7 @@ fieldset {
   position: absolute;
   left: 0;
   bottom: 0;
-}
+} */
 
 .header-item-link:hover,
 .header-item-link:focus,
@@ -279,6 +279,29 @@ fieldset {
 
 .benefits-list-item {
   width: calc((100% - 2 * 70px) / 3);
+  padding-right: 18px;
+}
+
+.benefits-list-item:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.benefits-icons {
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 15px; */
+  margin-bottom: 32px;
+}
+
+.benefits-icon {
+  /* fill: transparent; */
+  /* stroke: #fd9222; */
+  fill: #fd9222;
 }
 
 .benefits-item-subtitle {
@@ -398,7 +421,15 @@ fieldset {
   font-size: 10px;
   line-height: 120%;
   color: #fff;
+  transition: background-color 300ms ease, color 300ms ease;
 }
+
+.ingredients-cover-btn:hover,
+.ingredients-cover-btn:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+
 .ingredients-cover-link {
   border: 1px solid #fd9222;
   border-radius: 35px;
@@ -410,6 +441,13 @@ fieldset {
   font-size: 10px;
   line-height: 120%;
   color: #111;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+.ingredients-cover-link:hover,
+.ingredients-cover-link:focus {
+  background-color: #fd9222;
+  color: #fff;
 }
 
 .ingredients-subtitle {
@@ -442,6 +480,7 @@ fieldset {
 .made-content {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .made-title span {
@@ -456,6 +495,8 @@ fieldset {
   display: flex;
   flex-direction: column;
   padding: 32px;
+  background-color: #fff;
+  border-radius: 15px;
 }
 .made-subtitle {
   font-weight: 600;
@@ -480,6 +521,7 @@ fieldset {
   width: 8px;
   height: 8px;
   background-color: #4c4c4c;
+  border: 1px solid #ecedec;
   position: absolute;
   border-radius: 50%;
   left: 0;
@@ -507,7 +549,7 @@ fieldset {
   text-transform: uppercase;
   text-align: center;
   max-width: 268px;
-  margin: 0 auto 50px;
+  margin: 0 auto 90px;
 }
 
 .reviews-title span {
@@ -542,7 +584,9 @@ fieldset {
   /* left: 140px; */
   position: absolute;
   bottom: 140px;
-  left: 140px;
+  /* left: 140px; */
+  left: 50%;
+  transform: translate(-50%);
   border-radius: 50%;
   /* overflow: hidden; */
 }
@@ -593,7 +637,7 @@ fieldset {
 
 .footer-info {
   display: flex;
-  padding-bottom: 54px;
+  padding-bottom: 50px;
   margin-bottom: 24px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -632,6 +676,11 @@ fieldset {
 }
 .footer-contacts-item {
 }
+
+.footer-contacts-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
 .footer-contacts-link {
   font-size: 14px;
   line-height: 129%;
@@ -639,12 +688,24 @@ fieldset {
   text-align: center;
   color: #fff;
 }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-navigation {
+}
+
 .footer-menu-list {
   display: flex;
   gap: 24px;
 }
+
 .footer-menu-item {
 }
+
 .footer-menu-link {
   font-weight: 500;
   font-size: 14px;
@@ -652,4 +713,45 @@ fieldset {
   letter-spacing: -0.02em;
   color: #fff;
   transition: color 300ms ease;
+}
+.footer-form {
+  display: flex;
+  /* gap: 8px; */
+}
+.footer-input {
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  /* padding: 13px 24px; */
+  width: 313px;
+  height: 52px;
+  background-color: transparent;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-right: 8px;
+}
+
+.footer-input::placeholder {
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-btn {
+  border-radius: 100px;
+  padding: 17px 40px;
+  /* width: 137px; */
+  /* height: 52px; */
+  background-color: #fd9222;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
