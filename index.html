@@ -421,7 +421,48 @@
       </div>
     </footer>
     <div class="backdrop">
-      <div class="modal"></div>
+      <!-- <dialog open>
+        <p>Greetings, one and all!</p>
+      </dialog>  тег модалки. але майже не використовується-->
+      <div class="modal">
+        <button type="button" class="modal-open-btn">X</button>
+        <p class="modal-subtitle">
+          LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
+        </p>
+        <form class="modal-form">
+          <label for="user-name">Name</label>
+          <input
+            class="modal-input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            value=""
+            placeholder="Jacob Mercer"
+            autofocus
+          />
+          <label for="user-email">Email</label>
+          <input
+            class="modal-input"
+            type="text"
+            name="user-email"
+            id="user-email"
+            value=""
+          />
+          <label for="user-phone">Phone number</label>
+          <input
+            class="modal-input"
+            type="text"
+            name="user-phone"
+            id="user-phone"
+            value=""
+          />
+          <button class="modal-btn" type="submit">Send</button>
+        </form>
+        <!-- <form action="">
+          <label for="name">Name</label>
+          <input type="name" />
+        </form> -->
+      </div>
     </div>
   </body>
 </html>
