@@ -420,7 +420,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <!-- <dialog open>
         <p>Greetings, one and all!</p>
       </dialog>  тег модалки. але майже не використовується-->
@@ -430,32 +430,83 @@
           LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
         </p>
         <form class="modal-form">
-          <label for="user-name">Name</label>
-          <input
-            class="modal-input"
-            type="text"
-            name="user-name"
-            id="user-name"
-            value=""
-            placeholder="Jacob Mercer"
-            autofocus
-          />
-          <label for="user-email">Email</label>
-          <input
-            class="modal-input"
-            type="text"
-            name="user-email"
-            id="user-email"
-            value=""
-          />
-          <label for="user-phone">Phone number</label>
-          <input
-            class="modal-input"
-            type="text"
-            name="user-phone"
-            id="user-phone"
-            value=""
-          />
+          <div class="modal-field">
+            <label class="modal-label" for="user-name">Name</label>
+            <div class="input-wrapper">
+              <input
+                class="modal-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                value=""
+                placeholder="Jacob Mercer"
+                autofocus
+                required
+              />
+              <svg class="modal-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label class="modal-label" for="user-email">Email</label>
+            <div class="input-wrapper">
+              <input
+                class="modal-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                value=""
+              />
+              <svg class="modal-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-phone">Phone number</label>
+            <div class="input-wrapper">
+              <input
+                class="modal-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                value="+380"
+                required
+              />
+              <svg class="modal-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+              class="modal-privacy"
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              value=""
+            />
+            <label class="modal-privacy-text" for="privacy"
+              ><span
+                ><svg class="modal-privacy-check" width="10" height="10">
+                  <use
+                    href="./images/symbol-defs.svg#icon-check"
+                  ></use></svg></span
+              >I accept the terms and conditions of the Privacy Policy</label
+            >
+          </div>
+          <!-- <input type="checkbox" /> -->
           <button class="modal-btn" type="submit">Send</button>
         </form>
         <!-- <form action="">
