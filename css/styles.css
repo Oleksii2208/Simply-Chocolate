@@ -50,6 +50,19 @@ fieldset {
   border: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* ---containers--- */
 
 .container {
@@ -259,6 +272,23 @@ fieldset {
   letter-spacing: -0.03em;
   color: #fff;
   margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.hero-scroll-btn {
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-icon {
+  fill: #fd9222;
 }
 
 /* ---benefits--- */
@@ -828,7 +858,8 @@ fieldset {
   outline: transparent;
 }
 
-.modal-input:focus {
+.modal-input:focus,
+.modal-textarea:focus {
   border-color: #fd9222;
 }
 
@@ -896,26 +927,59 @@ fieldset {
   font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.6);
+  display: flex;
+  align-items: center;
+  /* position: relative; */
 }
+
+/* Варіант чекбокса */
+/* .modal-privacy-text::before {
+  content: "";
+  width: 40px;
+  height: 22px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  border-radius: 50px;
+  margin-right: 12px;
+  transition-duration: 300ms;
+}
+
+.modal-privacy-text::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  background-color: #4c4c4c;
+  border-radius: 50%;
+  transition-duration: 300ms;
+}
+
+.modal-privacy:checked + .modal-privacy-text::after {
+  transform: translate(16px);
+  background-color: #fd9222;
+}
+
+.modal-privacy:checked + .modal-privacy-text::before {
+  background-color: #ffc587;
+} */
 
 .modal-privacy-text span {
   width: 20px;
   height: 20px;
   border-radius: 6px;
   border: 1px solid rgba(17, 17, 17, 0.14);
-  /* display: block; */
+  margin-right: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.modal-privacy-text span:hover {
-  background-color: #fd9222;
-  /* stroke: #fff; */
-}
-
-.modal-privacy-check {
   fill: transparent;
+}
+
+.modal-privacy:checked + .modal-privacy-text span {
+  background-color: #fd9222;
+  border: none;
+  fill: #fff;
 }
 
 /* input::placeholder {

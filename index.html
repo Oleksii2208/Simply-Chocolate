@@ -81,13 +81,22 @@
           <div class="hero-buttons">
             <button class="hero-btn" type="button">Buy now</button
             ><a class="hero-link" href="#made">How it’s made</a
-            ><a class="hero-scroll" href="">scroll down</a>
+            ><a class="hero-scroll" href=""
+              >scroll down
+              <div class="hero-scroll-btn">
+                <svg class="hero-icon" width="22" height="22">
+                  <use
+                    href="./images/symbol-defs.svg#icon-fi-rr-angle-small-left"
+                  ></use>
+                </svg>
+              </div>
+            </a>
           </div>
         </div>
       </section>
       <section class="benefits">
         <div class="container-narrow">
-          <h2 class="benefits-title" hidden>Benefits</h2>
+          <h2 class="benefits-title visually-hidden">Benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-list-item">
               <div class="benefits-icons">
@@ -420,7 +429,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <!-- <dialog open>
         <p>Greetings, one and all!</p>
       </dialog>  тег модалки. але майже не використовується-->
@@ -491,14 +500,14 @@
           </div>
           <div class="modal-field">
             <input
-              class="modal-privacy"
+              class="modal-privacy visually-hidden"
               type="checkbox"
               name="privacy"
               id="privacy"
               value=""
             />
-            <label class="modal-privacy-text" for="privacy"
-              ><span
+            <label class="modal-privacy-text" for="privacy">
+              <span
                 ><svg class="modal-privacy-check" width="10" height="10">
                   <use
                     href="./images/symbol-defs.svg#icon-check"
